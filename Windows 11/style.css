@@ -1,0 +1,148 @@
+
+ * {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	overflow: hidden;
+	height: 100vh;
+	font-family: Segoe UI;
+	font-size: 20px;
+}
+
+
+.icons {
+	height: 0px;
+	width: 4%;
+}
+
+.chrome {
+	position: absolute;
+	width: 50px;
+	margin: 16px 8px 5px 10px;
+}
+
+.edge {
+	position: absolute;
+	width: 50px;
+	margin: 70px 8px 5px 10px;
+}
+
+.recycle {
+	position: absolute;
+	width: 50px;
+	margin: 131px 8px 5px 10px;
+}
+
+
+.taskbar {
+	background-color: #f3f3f3;
+	position: absolute;
+	bottom: -1px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.startIcon {
+	position: relative;
+	right: -156px;
+	z-index: 10;
+}
+
+
+.startMenu {
+	position: absolute;
+/*	bottom: 50px;	*/
+	bottom: -660px;
+    width: 100%;
+	text-align: center;
+	transition: all 0.6s ease-in;
+}
+
+
+.startImg {
+	width: 35%;
+	border: none;
+	border-radius: 12px;
+}
+
+
+.explorerIcon {
+    position: relative;
+    right: -288px;
+	z-index: 10;
+}
+
+
+.searchIcon {
+    position: relative;
+    right: -116px;
+	z-index: 10;
+}
+
+
+.searchBox {
+	position: absolute;
+	bottom: 5px;
+	left: 20px;
+	z-index: 10;
+	font-size: 20px;
+	padding: 6px;
+	border: none;
+	border-radius: 8px;
+}
+
+
+
+.contentModal {
+	display: none;
+	height: 93%;
+	width: 100%;
+	z-index: 20;
+	overflow: hidden;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: azure;
+	animation-name: openModal;
+	animation-duration: 0.5s;
+}
+
+@keyframes openModal {
+	from {opacity: 0;}
+	to {opacity: 1}
+}
+
+
+.modalBody {
+	padding: 60px 30px;
+}
+
+
+.modalHeader span {
+	color: grey;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.modalHeader span:hover {
+	color: azure;
+	background-color: red;
+}
+
+
+.iconsRight {
+	position: absolute;
+	right: 0;
+}
+
+
+
+
+
+

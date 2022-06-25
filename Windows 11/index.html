@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Trying Windows 11 </title>
+ 
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div class='icons'>
+		<img src='Icon_chrome.png' alt='Chrome Icon' class='chrome'>
+		<div style='width: 1%; position: relative; top: 65px; left: 10px; color: azure; font-family: Segoe UI;'> Google Chrome </div>
+
+		<img src='Icon_edge.png' alt='Edge Browser Icon' class='edge'>
+		<div style='width: 1%; position: relative; top: 120px; left: 10px; color: azure; font-family: Segoe UI;'> Microsoft Edge </div>
+
+		<img src='Icon_recycle.png' alt='Recycle Bin Icon' class='recycle'>
+		<div style='width: 1%; position: relative; top: 180px; left: 10px; color: azure; font-family: Segoe UI;'> Recycle Bin </div>
+	</div>
+
+	<div class='taskbar'>
+		<img src='start_icon.PNG' alt='Start Button' class='startIcon' onclick='startIcon()'>
+		<img src='file_explorer.PNG' alt='File Explorer' class='explorerIcon' onclick='explorer()'>
+		<img src='search.PNG' alt='Search Box' class='searchIcon' onclick='search()'>
+		<img src='taskbar-icons1.jpg' alt='Taskbar Icons'>
+		<img src='taskbar-iconsRight.jpg' alt='Taskbar Icons Right' class='iconsRight'>
+	</div>
+
+<!-- Create a search input box appear when user clicks on search icon on taskbar -->
+	<div>
+		<input type='text' name='search' class='searchBox' placeholder='Search'>
+	</div>
+
+
+
+
+	<div class='contentModal'>
+		<div class='modalHeader'>
+			<span id='cross'> &nbsp &times; &nbsp </span>
+		</div>
+		<div class='modalBody'>
+		<p style='margin-bottom: 8px;'> Windows 10 has limited the number of files that load at system startup to help with the core performance of the Operating System. Microsoft has also 
+		removed many of the fluff items that Windows Vista used, allowing for better performance. </p>
+		<p style='margin-bottom: 8px;'> Service packs are updates to the Windows 10 Operating System that include bug fixes and product enhancements. Some of the options that might be 
+		included in service packs are security fixes or updated versions of software, such as Internet Explorer. </p>
+		<p style='margin-bottom: 8px;'> Sysprep is a free utility that comes on all Windows Operating Systems. By default, the Sysprep utility can be found on Windows Server 2012 R2 and 
+		Windows 10 Operating Systems in the \Windows\system32\sysprep directory. You do not use Sysprep to image a computer for upgrading a current machine. </p>
+		<p style='margin-bottom: 8px;'> Another way to install Windows 10 is to use the Windows Assessment and Deployment Kit (WADK). The Windows ADK is a set of utilities and 
+		documentation that allows an Administrator to configure and deploy Windows Operating Systems. </p>
+		<p style='margin-bottom: 8px;'>  Virtualization is a method for abstracting physical resources from the way they interact with other resources. For example, if you abstract the 
+		physical hardware from the Operating System, you get the benefit of being able to move the OS between different physical systems. </p>
+		</div>
+	</div>
+
+	<div class='startMenu'>
+		<img src='start1.jpg' alt='start_menu' class='startImg'>
+	</div>
+
+	<video autoplay muted style='z-index: 15;'>
+		<source src='Bloom.mp4' type='video/mp4'>
+	</video>
+
+
+	<script src="script.js"> </script>
+
+</body>
+
+</html>
