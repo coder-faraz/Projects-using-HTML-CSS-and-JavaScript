@@ -1,0 +1,124 @@
+
+body {
+    padding: 0;			/* This is called CSS Reset  */
+    margin: 0;
+    color: azure;
+    font-family: arial, verdana, helvetica;
+    font-size: 20px;
+    font-weight: 700;
+    background: url("img/lady.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.left {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+/*    border: 2px solid crimson;    */
+}
+
+.left img {
+    margin-top: -30px;
+    width: 115px;
+}
+
+.left div {
+    margin-top: -40px;
+    text-align: center;
+}
+
+
+.center {
+    display: block;
+    width: 60%;
+    margin: 10px auto;      /*  To center any Object these 3 properties are required to be set  */
+/*    border: 2px solid purple;     */
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+/*    border: 2px solid aqua;   */
+}
+
+
+.navbar {
+    display: inline-block;      /*  In this, object remains inline & you can set width, height also  */
+
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: grey;
+    text-decoration: none;
+    padding: 30px 20px;
+}
+
+.navbar li a:hover, .navbar li a.active {
+    color: azure;
+    text-decoration: underline;
+
+}
+
+
+.btn {
+    background-color: fuchsia;
+    color: grey;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: arial;
+    border: none;
+    border-radius: 8px;
+    padding: 6px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    background-color: maroon;
+    color: white;
+    box-shadow: 0 8px 10px 0 rgba(86, 8, 24, 0.50);
+}
+
+.btn:active {
+    transform: translateY(6px);
+}
+
+
+.container {            /* Because our .left has position:absolute, it is sliding downwards, to adjust  
+/*  border: 3px solid yellow;        this, give a margin to .container   */
+    margin: 100px 20px;
+    padding: 70px;
+    width: 35%;
+    border-radius: 25px;
+}
+
+.container button {
+    display: block;
+    width: 40%;
+    margin: auto;
+}
+
+
+.formGroup input {
+    display: block;     	/*  Here, we have display:block & width properties set, so we can use margin:  */
+    width: 400px;       	/* auto property to center our element  */
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px;
+    border: none;
+    border-radius: 7px;
+
+}
+
+
+
