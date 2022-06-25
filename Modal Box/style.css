@@ -1,0 +1,109 @@
+
+body {
+	background-color: #ffffd5;			/* creamy color */
+	font-family: arial, verdana, helvetica;
+	margin: 0;
+	line-height: 1.6;
+}
+
+
+#button1 {
+	background-color: fuchsia;
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 7px;
+	margin: 20px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+
+#button1:active {
+	transform: translateY(8px);
+}
+
+
+
+#modal {
+	display: none;		/* Hide modal box when the page loads. display:none; will hide the element & the space its taking, opposite of visibility */
+	z-index: 1;				/* When you have multiple boxes, then which box overlaps the other is specified by z-index  */
+	position: fixed;		/*  z-index works only when position property is specified & position is not static  */
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+	overflow: auto;
+}
+
+
+#modal-content {
+	background-color: #f4f4f4;		/* light white color  */
+	width: 40%;
+	margin: 10% auto;
+	border-radius: 8px;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),  0 10px 15px 0 rgba(0,0,0,0.2);
+	animation-name: openModal;
+	animation-duration: 1s;
+}
+
+
+@keyframes openModal {
+	from {opacity: 0;}		/*  our modal pops up from initial state to final state, brings animation of fade in to our modal box */
+	to {opacity: 1;}
+}
+
+
+
+#modal-header {
+	background-color: red;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 8px 8px 0 0;
+}
+
+
+#modal-header h2 {
+	margin: 0;
+}
+
+
+#modal-body {
+	padding: 10px 20px;
+}
+
+
+#modal-footer {
+	padding: 10px;
+}
+
+
+
+#span1 {
+	float: right;
+	font-size: 26px;
+	color: grey;
+}
+
+
+hr {
+	margin: auto -20px;
+}
+
+
+#button2 {
+	background-color: blue;
+	color: grey;
+	float: right;
+	padding: 10px;
+	font-size: 18px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+
+
+

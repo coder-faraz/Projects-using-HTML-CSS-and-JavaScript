@@ -1,0 +1,40 @@
+
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+	<title>  Modal Box Creation  </title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<button onmouseover="changeColor()" onmouseout="toNormal()" id="button1">	Error Box	</button>
+
+	<div id="modal">			<!-- This contains the modal box, its actually the empty space of the browser window containing the modal box	-->
+		<div id="modal-content">	<!--  Here comes the actual modal box layout containing header, body & footer of the box  -->
+			<div id='modal-header'>
+			<span onmouseover='changeColor2()' onmouseout='toNormal2()' id="span1">	&times;  </span>		<!--  This code brings x symbol  -->
+			<h2> &#9888;  Error	</h2>			<!--  This code brings warning sign  -->
+			</div>
+			<div id='modal-body'>
+			<p>	An Exception Has Occurred. </p>
+			<p> Your Program Has Encountered An Error. Windows is Trying To Solve The Problem.  </p>	<br />	<hr />
+			</div>
+			<div id='modal-footer'>
+			<button onmouseover='changeColorF()' onmouseout='toNormalF()' id='button2'>  Close  </button>	<br />	<br />
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js">		</script>
+
+</body>
+
+</html>
+
