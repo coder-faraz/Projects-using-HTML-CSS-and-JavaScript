@@ -1,0 +1,289 @@
+/* Importing Google Font named, Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+
+html {        /* Adding this Property to html element enables smooth scrolling for the whole Webpage */
+    scroll-behavior: smooth;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    color: grey;
+    font-size: 22px;
+    font-family: arial, verdana;
+    font-weight: 700;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+
+.bg {
+    background: rgba(0, 0, 0, 0.6) url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    
+}
+
+
+
+.logo {
+    width: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 56%;
+    border: 3px solid azure;
+    border-radius: 50px;
+}
+
+
+
+.navList {
+    display: flex;
+    align-items: center;
+    width: 60%;
+/*  background-color: crimson;  */
+}
+
+.navList li {
+    list-style: none;
+    padding: 15px 28px;
+}
+
+.navList li a {
+    color: grey;
+    text-decoration: none;
+}
+
+.navList li a:hover, .navList li a.active {
+    color: azure;
+    text-decoration: underline;
+}
+
+
+
+.rightNav {
+    width: 30%;
+    margin-right: 50px;
+/*  background-color: purple;   */
+}
+
+.search {
+    padding: 6px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.btn {
+    color: grey;
+    background: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: verdana, arial;
+    padding: 10px 18px;
+    margin-right: 10px;
+    border: 3px solid azure;
+    border-radius: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn:hover {
+    color: azure;
+    background-color: maroon;
+}
+
+.btn:active {
+    transform: translateY(6px);
+}
+
+.buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+.btnSm {
+    font-size: 14px;
+    padding: 6px;
+    vertical-align: middle;
+}
+
+
+.burger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.line {
+    width: 33px;
+    background-color: azure;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+
+.firstSection {
+    height: 80vh;
+}
+
+
+.boxMain {
+    max-width: 50%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.firstHalf {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6px 10px;
+}
+
+.textBig {
+    color: deeppink;
+    font-size: 30px;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.textSm {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.secondHalf {
+    width: 30%;
+}
+
+.secondHalf img {
+    display: block;
+    width: 200px;
+    height: 170px;
+    margin: auto 20px;
+    border: 3px solid azure;
+    border-radius: 50px;
+}
+
+
+
+.section {
+/*  height: 400px;  */
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sectionParas {
+    padding: 0 50px;
+}
+
+.imgFluid {
+    display: block;
+    width: 180px;
+    margin-top: 30px;
+    height: 160px;
+    border: 2px solid cornflowerblue;
+    border-radius: 20px;
+}
+
+.left {
+    flex-direction: row-reverse;
+}
+
+.secSubTag {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.contact {
+    background-color: #f6f5f4;
+    height: 670px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contact h2 {
+    padding: 30px 2px;
+}
+
+.contact div {
+    max-width: 60%;
+    margin: 25px auto;
+}
+
+.contact div input, .contact div textarea {
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnBg {
+    border: 3px solid grey;
+    width: 25%;
+}
+
+
+.footer {
+    max-width: 100%;
+    margin-top: 2px;
+}
+
+.foot {
+    color: azure;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.material-icons {
+    margin-left: 150%;
+    margin-top: -65px;
+}
+
+.material-icons.mi-36 { font-size: 36px; }
+
+
+
+

@@ -1,0 +1,50 @@
+
+@media only screen and (max-width: 1260px) {
+    .navList {
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        height: 450px;
+        transition: all 0.7s ease-out;
+    }
+    .h-nav-resp {
+        height: 72px;
+    }
+    .boxMain {
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightNav {
+        text-align: center;
+    }
+    .v-class-resp {
+        opacity: 0;
+    }
+    .secondHalf img {
+        width: 50%;
+        margin-top: 79px;
+        height: 51%;
+    }
+    .section {
+        flex-direction: column-reverse;
+    }
+    .search {
+        width: 100%;
+    }
+    .burger {
+        display: block;
+    }
+    .contact div input, .contact div textarea {
+        width: 80%;
+    }
+
+    .btnSm {
+        margin-top: -10px;
+    }
+    .btnBg {
+        width: 78%;
+    }
+
+}
+
