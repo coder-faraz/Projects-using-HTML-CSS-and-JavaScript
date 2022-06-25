@@ -1,0 +1,87 @@
+
+body {
+    background-color: deepskyblue;
+    font-family: arial, verdana, helvetica;
+    margin: 0;
+    padding: 0;
+}
+
+
+#navbar {
+    background-color: #800080;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 28px;
+    margin-top: -20px;
+}
+
+
+#navbar ul {
+    overflow: auto;
+}
+
+#navbar ul li {
+    list-style: none;
+    float: left;
+    margin: 10px 20px;
+}
+
+#navbar ul li a {
+    color: azure;
+    text-decoration: none;
+    padding: 13px;
+}
+
+#navbar ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+    color: crimson;
+}
+
+
+#subMenu {
+    display: none;
+    position: absolute;
+    background-color: #800080;
+    border-radius: 0 0 12px 12px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+
+#subMenu ul {
+    margin: 10px;
+    
+}
+
+#subMenu ul li {
+    clear: left;    /* Elements next to a floating element will flow around it. To avoid this, use this property  */
+    float: left;
+    color: azure;
+    margin-left: -25px;
+    border-bottom: 2px dotted white;
+}
+
+#subMenu ul li:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+
+
+
+.search {
+    float: right;
+    color: azure;
+    padding: 7px 73px;
+}
+
+
+#search {
+    border: 3px solid #800080;
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+}
+
+
+

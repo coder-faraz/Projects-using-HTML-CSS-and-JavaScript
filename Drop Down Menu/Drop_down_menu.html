@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title> Drop Down Menu </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="Drop_down_menu.css">
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li> <a href="#"> Home </a> </li>
+            <li onmouseover="showSubmenu()" onmouseout="toNormal()"> <a href="#">&#9964; About Us </a>
+            <div id="subMenu">
+                <ul>
+                    <li> Our Mission </li>
+                    <li> Our Vision </li>
+                    <li> Our Team </li>
+                </ul>
+            </div>
+            </li>
+            <li> <a href="#"> &#9936; Clients </a> </li>
+            <li> <a href="#"> &#8377; Pricing </a> </li>
+            <li> <a href="#"> &#9743; Contact </a> </li>
+            <div class="search">
+                <input type='text' name="search" id="search" placeholder="Search This Website">
+            </div>
+        </ul>
+    </nav>
+
+
+    <script type="text/javascript" src="Drop_down_menu.js">  </script>
+
+</body>
+
+</html>
