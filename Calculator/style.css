@@ -1,0 +1,50 @@
+
+.container {
+	text-align: center;		/*  To center the contents inside our container, but table didn't came in center, we need to set its margin:auto  */
+	background-color: #6F00FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	border: 6px solid #5A4FCF;
+	border-radius: 26px;
+	width: 26%;
+	margin: auto;
+	padding: 15px;
+}
+
+
+table {
+	margin: auto;
+}
+
+
+#screen {
+	width: 80%;
+	font-size: 24px;
+	border: none;
+	border-radius: 8px;
+    padding: 6px;
+    margin-bottom: 16px;
+}
+
+
+button {
+	background-color: maroon;
+	color: grey;
+	font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	vertical-align: middle;
+	border: none;
+	border-radius: 6px;
+	padding: 10px 22px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+button:hover {
+	color: azure;
+}
+
+button:active {
+	transform: translateY(6px);
+}
+
+
