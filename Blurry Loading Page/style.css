@@ -1,0 +1,33 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.bg {
+	background: url('E:/SOFT1/Desktop look cool/sunrise-boat-1440x900-wallpaper.jpg') no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: -30px;
+	left: -30px;
+	height: calc(100vh + 50px);		/* calc() function performs a calculation to be used as the property value, here calculating width of div element */
+	width: calc(100vw + 50px);
+	z-index: -1;		/* Because we want our image to be behind loading-text  */
+	filter: blur(0px);		/*  filter property defines visual effects like blur(), saturation(), invert(), contrast() to an element (often <img>).	*/
+}
+
+
+.loading {
+	font-size: 32px;
+	color: azure;
+	position: relative;
+	top: 280px;
+}
+
+
