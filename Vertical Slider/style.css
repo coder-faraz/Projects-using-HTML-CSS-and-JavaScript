@@ -1,0 +1,88 @@
+
+* {
+	margin: 0;		/*  this is called CSS Reset  */
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.slider-container {
+	color: azure;
+	overflow: hidden;
+	position: relative;		/*  Parent Container must have position:relative, for its sub-containers to have position:absolute  */
+	height: 100vh;
+	width: 100vw;
+}
+
+
+.slider-left {
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: transform 0.5s ease-in-out;			/*  for smooth changing of slides  */
+}
+
+
+.slider-left > div {
+	height: 100%;
+	width: 100%;		/*  Both height & width of 1st div are 100% of slider-left  */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.slider-right {
+	height: 100%;
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 30%;		/*  Because the width of our slider-left is 30%, so I am positioning it absolute, i have to start after slider-left, which is 30%  */
+	transition: transform 0.5s ease-in-out;
+}
+
+
+.slider-right > div {
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+.action-buttons button {
+	position: absolute;
+	top: 42%;
+	left: 30%;
+	z-index: 10;		/*  to make sure, the buttons are always on top  */
+	color: #aaa;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: verdana, arial;
+    background: none;
+    border: 3px solid #aaa;		/*  Light grey color  */
+    padding: 8px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+.action-buttons button:hover {
+	color: #222;				/*  Dark grey color  */
+	border: 3px solid #222;
+}
+
+
+.action-buttons button:active {
+	transform: translateY(6px);
+}
+
+
+
+
