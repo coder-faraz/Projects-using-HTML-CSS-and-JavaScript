@@ -1,0 +1,106 @@
+
+/*   color variables 
+clr-primary: #ff7043;
+clr-primary-hover: #29e6a7;
+clr-primary-dark: #039d69;
+clr-gray100: #f9fbff;
+clr-gray150: #f4f6fb;
+clr-gray200: #eef1f6;
+clr-gray300: #e1e5ee;
+clr-gray350: #c7ccdb;
+clr-gray400: #767b91;
+clr-gray500: #4f546c;
+clr-gray600: #2a324b;
+clr-gray700: #161d34;	*/
+
+
+				/* The ::before & ::after CSS Selectors are used to insert something before & after the content of each selected element.  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 700;
+	height: 100vh;
+	display: flex;
+	justify-content: center;		/* Horizontal Alignment  */
+	align-items: center;			/* Vertical Alignment  */
+}
+
+
+.search {
+	position: relative;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+div svg {
+	height: 6rem;
+	padding: 1.5rem;
+	position: absolute;			/* position:absolute; gives full control over the placement of elements on the page.  Parent element must be relative  */
+	cursor: pointer;
+}
+
+
+.searchIcon {
+	fill: #767b91;		/* CSS fill property is used for setting the color of an SVG shape. */
+	z-index: 9;			/* To make the search icon on top of all other icons	*/
+}
+
+.searchClose {
+	right: 0;
+	fill: azure;
+	transition: 0.5s fill ease-in;
+}
+
+.searchDelete {
+	right: 5rem;
+	fill: #c7ccdb;
+	display: none;
+}
+
+
+.searchInput {
+	font-family: inherit;
+	font-size: 2rem;
+	color: #767b91;
+	outline: none;
+	width: 2rem;
+	box-shadow: 0 0 10px 5px #e1e5ee;
+	border: none;
+	border-radius: 50%;
+	padding: 1.75rem 3rem;
+	transition: 0.5s width ease-in-out, 0.5s padding ease-in-out, 0.5s border-radius ease-in-out;
+}	/* When user clicks on input field, I want it to transform smoothly into a rectangle, this transition property is saying the same  */
+
+
+.searchInput:not(:placeholder-shown) ~ 
+.searchDelete {
+	display: block;
+}
+/* The :placeholder-shown CSS pseudo-class represents any input or textarea element that is currently displaying placeholder text.	*/
+
+
+.openState {
+	width: 34rem;
+	padding: 1.5rem 11rem 1.5rem 6rem;
+	border-radius: 0.5rem;
+}
+
+		/*  Both these class will be added to their respective elements using javascript classList.add() method		*/
+
+.greyClose {
+	fill: #767b91;
+}
+
+
+
+
