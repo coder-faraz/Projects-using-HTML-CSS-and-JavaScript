@@ -1,0 +1,103 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #6F00FF;
+	font-size: 20px;
+	font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#burger {
+	position: absolute;
+	width: 10%;
+	height: 25%;
+	margin: 30px 2px 40px 30px;
+	z-index: 10;		/*  When we position:absolute & top:0 our ul menu, then z-index is required to show our burger on top of our ul menu	*/
+}
+
+
+.line {
+	display: block;
+	width: 32px;
+	height: 4px;
+	background-color: azure;
+	border-radius: 3px;
+	margin: 4px 2px;		/*	To rotate our burger lines & make it a cross icon, margin property is not required  */
+	transition: 0.4s ease-in-out;		/* this value specifies a transition effect with a slow start and end	*/
+	cursor: pointer;
+}
+
+
+#navbar {
+	margin: 0;
+	display: none;
+	animation-name: displayMenu;
+	animation-duration: 1.5s;
+}
+
+
+@keyframes displayMenu {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+
+#navbar li {
+	list-style: none;
+	padding: 20px 10px;
+}
+
+
+#navbar li a {
+	color: azure;
+	text-decoration: none;
+}
+
+
+#navbar li a:hover {
+	padding: 4px;
+	border: 1px solid azure;
+}
+
+		/* We will toggle icon class when we click on our burger. Means On/Off icon class on our burger element  */
+.icon .line {
+	margin-bottom: -7.5px;
+}
+
+.icon #line1 {
+	transform: rotate(-45deg);
+}
+
+.icon #line2 {
+	opacity: 0;		/* we will hide 2nd line of our burger, because when it will transform to close symbol then 1st & 3rd lines are req.to make a cross  */
+}
+
+.icon #line3 {
+	transform: rotate(45deg);
+}
+
+
+.change {
+	background-color: crimson;
+	height: 100vh;
+	width: 13%;
+	position: absolute;
+	top: 0;
+	border-radius: 10px;
+	z-index: -10;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* flex-direction: row;			- Do these changes, if you want a Horizontal Menu
+   width: 100%;
+   height: 15vh;	*/
+
+
+
+
