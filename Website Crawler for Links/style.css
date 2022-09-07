@@ -1,0 +1,57 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#btn:active {
+	transform: translateY(8px);
+}
+
+
+#modalContainer {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+#modalBox {
+	display: block;
+	width: 43%;
+	height: 45%;
+	margin: 180px auto;
+	background-color: lavender;
+	border-radius: 10px;
+}
+
+
+#cross {
+	color: grey;
+    float: right;
+    font-size: 28px;
+    padding: 4px 12px;
+	cursor: pointer;
+}
+
+#cross:hover {
+	background-color: red;
+	color: azure;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 4px;
+}
+
+
+#modalBody {
+	padding: 25px 15px;
+}
+
+
+
+

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <title> Practice Website </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+	<div id='container'>
+	<a href='https://www.google.com'> <img src='F:\Pictures..)\Adobe Photoshop pics\Wallpaper\1669096460 copy.jpg'> </a>
+	<a href='https://www.w3schools.com'> <img src='F:\Pictures..)\Adobe Photoshop pics\Wallpaper\1332513820.jpg'> </a>
+	<a href='https://www.youtube.com'> <img src='F:\Pictures..)\Adobe Photoshop pics\Wallpaper\2000226230 copy.jpg'> </a>
+	<a href='https://www.github.com'> <img src='F:\Pictures..)\Adobe Photoshop pics\Wallpaper\1496396917.jpg'> </a>
+	<button id='btn' onmouseover='changeColor()' onmouseout='toNormal()' onclick='showLinks()'> Links are </button>
+
+	<div id='modalContainer'>
+		<div id='modalBox'>
+			<div id='modalHeader'>
+				<span id='cross' onclick='crossClose()'> &times; </span>
+			</div>
+			<div id='modalBody'>
+				<h2> Number Of Links In This Document Are : </h2>
+
+<!--			<p> </p>
+				<p> </p>		This method makes a static crawler for links on the page, we have made it dynamic using Javascript
+				<p> </p>		We created p element & append it as child to div & created its textnode to store the text of each link we get on the page
+				<p> </p>
+				<i><b> <p id='demo' style='width:14%; padding:2px 4px;'> </p> </b></i>		-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Create a modal box when clicked on this button & show the number of links & their length -->
+	</div>
+
+
+    <script type="text/javascript" src="script.js">  </script>
+
+</body>
+
+</html>
